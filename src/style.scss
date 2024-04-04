@@ -1,0 +1,34 @@
+@import '../node_modules/modern-normalize/modern-normalize.css';
+
+@import './styles/global/fonts.scss';
+@import './styles/global/variables.scss';
+@import './styles/global/mixins.scss';
+@import './styles/global/animations/bounce-in-top.scss';
+
+@import './styles/header/header.scss';
+@import './styles/header/navigation.scss';
+@import './styles/header/burger.scss';
+@import './styles/header/languages.scss';
+
+html,
+body {
+  width: 100%;
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
