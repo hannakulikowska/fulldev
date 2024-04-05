@@ -4,11 +4,14 @@
 @import './styles/global/variables.scss';
 @import './styles/global/mixins.scss';
 @import './styles/global/animations/bounce-in-top.scss';
+@import './styles/global/animations/slide-in-left.scss';
 
 @import './styles/header/header.scss';
 @import './styles/header/navigation.scss';
 @import './styles/header/burger.scss';
 @import './styles/header/languages.scss';
+
+@import './styles/intro/intro.scss';
 
 html,
 body {
@@ -31,4 +34,16 @@ a {
 
 ul {
   list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }

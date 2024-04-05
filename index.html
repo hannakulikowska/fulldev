@@ -11,33 +11,14 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="alternate" hreflang="pl" href="https://fulldev.pl/" />
   <link rel="alternate" hreflang="ua" href="https://fulldev.pl/ua" />
-  <title>FullDev | Tworzenie stron internetowych</title>
+  <title>Full Development | Projektowanie stron internetowych</title>
 </head>
 
 <body>
   <header class="header">
     <div class="header__container">
       <a class="header__logo-link" href="javascript:void(0)">
-        <svg class="header__logo" width="185" height="70" viewBox="0 0 185 70" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="/src/assets/svg/logo.svg#logo"></use>
-          <use xlink:href="/src/assets/svg/logo.svg#d1"></use>
-          <use xlink:href="/src/assets/svg/logo.svg#e2"></use>
-          <use xlink:href="/src/assets/svg/logo.svg#v3"></use>
-          <use xlink:href="/src/assets/svg/logo.svg#e4"></use>
-          <use xlink:href="/src/assets/svg/logo.svg#l5"></use>
-          <use xlink:href="/src/assets/svg/logo.svg#o6"></use>
-          <use xlink:href="/src/assets/svg/logo.svg#p7"></use>
-          <use xlink:href="/src/assets/svg/logo.svg#m8"></use>
-          <use xlink:href="/src/assets/svg/logo.svg#e9"></use>
-          <use xlink:href="/src/assets/svg/logo.svg#n10"></use>
-          <use xlink:href="/src/assets/svg/logo.svg#t11"></use>
-          <use xlink:href="/src/assets/svg/logo.svg#f12"></use>
-          <use xlink:href="/src/assets/svg/logo.svg#u13"></use>
-          <use xlink:href="/src/assets/svg/logo.svg#l14"></use>
-          <use xlink:href="/src/assets/svg/logo.svg#l15"></use>
-          <use id="bounce-in-top" xlink:href="/src/assets/svg/logo.svg#bounce-in-top"></use>
-        </svg>
+        <img class="header__logo" src="/src/assets/svg/logo.svg" alt="logo">
       </a>
       <nav class="header__nav">
         <ul class="header__menu">
@@ -53,12 +34,23 @@
           </li>
         </ul>
       </nav>
-
       <input class="header__burger-checkbox" id="burger-checkbox" type="checkbox">
       <label class="header__burger-menu" for="burger-checkbox"></label>
     </div>
   </header>
-
+  <main class="main">
+    <section class="intro">
+      <div class="intro__container container">
+        <h1 class="intro__title">Tworzenie<br>
+          <span class="intro__title-box-dash slide-in-left">
+            <span class="intro__title-box-inner">stron</span>
+          </span><br>
+          internetowych<br>
+        </h1>
+        <p class="intro__description">które pomogą Ci wypromować się w Internecie</p>
+      </div>
+    </section>
+  </main>
   <script type="module" src="/src/main.ts"></script>
 </body>
 
