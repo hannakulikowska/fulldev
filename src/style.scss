@@ -13,10 +13,20 @@
 
 @import './styles/intro/intro.scss';
 
+@import './styles/advantages/advantages.scss';
+
 html,
 body {
-  width: 100%;
-  height: 100dvh;
+  @extend .full-dimentions;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -36,14 +46,25 @@ ul {
   list-style: none;
 }
 
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-}
-
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: calc((7 - 1.15)* 1.1vw + .8rem) 1rem;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.full-dimentions {
+  width: 100%;
+  height: auto;
+}
+
+.main-title {
+  font-weight: 600;
+  color: $color-main;
+  text-align: center;
 }

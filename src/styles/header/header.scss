@@ -1,11 +1,11 @@
 .header {
   width: 100%;
-  min-height: 80px;
+  min-height: 90px;
   background-color: $color-accent;
 }
 
 .header__container {
-  height: 80px;
+  height: 90px;
   @include flex (space-between, center);
   gap: 30px;
 }

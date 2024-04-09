@@ -3,7 +3,7 @@
     height: 100dvh;
     width: 100%;
     position: fixed;
-    top: 80px;
+    top: 90px;
     right: -100%;
     background-color: $color-accent;
     transition: right 0.1s ease-in-out;
@@ -23,7 +23,6 @@
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
-
   }
 }
 
@@ -32,7 +31,7 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  min-height: 80px;
+  min-height: 90px;
 
   @media screen and (max-width: 768px) {
     padding-left: calc(50% - 40px);
