@@ -3,8 +3,8 @@ import './style.scss';
 import BurgerMenu from './scripts/BurgerMenu';
 import AnimateOnScroll from './scripts/AnimateOnScroll';
 
-if (window.location.pathname === '/' && navigator.language.includes('ua')) {
-  window.location.href = '/ua';
+if (window.location.pathname === '/' && navigator.language.includes('uk')) {
+  window.location.href = '/uk';
 }
 
 new BurgerMenu();
