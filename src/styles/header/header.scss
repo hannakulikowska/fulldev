@@ -4,6 +4,11 @@
   background-color: $color-accent;
 }
 
+.header.active {
+  position: fixed;
+  z-index: 1;
+}
+
 .header__container {
   height: 90px;
   @include flex (space-between, center);

@@ -1,0 +1,15 @@
+@keyframes fadeIn {
+  from {
+    scale: 0;
+    opacity: 0;
+  }
+
+  50% {
+    scale: 2;
+  }
+
+  to {
+    scale: 1.5;
+    opacity: 1;
+  }
+}

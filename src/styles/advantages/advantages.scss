@@ -1,9 +1,11 @@
 .advantages {
   @extend .full-dimentions;
   background-color: $color-white;
+  cursor: default;
 }
 
 .advantages__container {
+  @extend .container;
   @extend .flex-col-center;
   gap: calc((3 - 1.15)* 1.1vw + .8rem);
 }
@@ -13,30 +15,37 @@
   font-size: calc((2 - 1.15)* 1.1vw + .8rem);
 }
 
+.advantages__description {
+  font-weight: 300;
+  font-size: calc((1.6 - 1.15)* 1.1vw + .8rem);
+  text-align: center;
+  color: $text-additional;
+  margin-block-end: calc((2 - 1.15)* 1.1vw + .8rem);
+}
+
 .advantages__cards-container {
   display: grid;
-  grid-template-columns: repeat(4, minmax(280px, 320px));
-  gap: 1em;
+  grid-template-columns: repeat(4, minmax(280px, 330px));
+  gap: calc((3 - 1.15)* 1.1vw + .8rem);
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1330px) {
     grid-template-columns: repeat(3, minmax(280px, 320px));
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 920px) {
     grid-template-columns: repeat(2, minmax(280px, 320px));
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 620px) {
     grid-template-columns: repeat(1, minmax(280px, 320px));
   }
 
-  @media screen and (max-width: 300px) {
+  @media screen and (max-width: 320px) {
     grid-template-columns: repeat(1, minmax(240px, 300px));
   }
 }
 
 .advantages__card {
-  cursor: default;
   border: 1px solid $color-accent;
   border-radius: 4px;
   padding: 1rem;
@@ -48,7 +57,13 @@
   grid-template-areas:
     "icon title title"
     "description description description";
-  transition: 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    @media (hover:hover) {
+      transform: translateY(-10px);
+    }
+  }
 }
 
 .advantages__card-icon {
@@ -59,46 +74,50 @@
   background-color: $color-accent;
   position: relative;
   transition: 0.3s ease-in-out;
+
+  &::after {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+  }
 }
 
-.advantages__card-icon::after {
-  content: "";
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 48px;
-  height: 48px;
-}
-
-.icon-domain::after {
+.advantages__card-icon--domain::after {
   background-image: url("/src/assets/svg/domain.svg");
 }
 
-.icon-ui::after {
+.advantages__card-icon--ui::after {
   background-image: url("/src/assets/svg/ui.svg");
 }
 
-.icon-mail::after {
+.advantages__card-icon--mail::after {
   background-image: url("/src/assets/svg/mail.svg");
 }
 
-.icon-phone::after {
+.advantages__card-icon--phone::after {
   background-image: url("/src/assets/svg/phone.svg");
 }
 
-.icon-protected::after {
+.advantages__card-icon--protected::after {
   background-image: url("/src/assets/svg/protected.svg");
 }
 
-.icon-design::after {
+.advantages__card-icon--design::after {
   background-image: url("/src/assets/svg/design.svg");
 }
 
-.icon-cms::after {
+.advantages__card-icon--cms::after {
   background-image: url("/src/assets/svg/cms.svg");
+}
+
+.advantages__card-icon--service::after {
+  background-image: url("/src/assets/svg/service.svg");
 }
 
 .advantages__card-title {

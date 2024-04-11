@@ -1,15 +1,11 @@
 import './style.scss';
 
-import { initializeBurgerMenu } from './scripts/header/initializeBurgerMenu';
-import AnimationObserver from './scripts/intro/AnimationObserver';
+import BurgerMenu from './scripts/BurgerMenu';
+import AnimateOnScroll from './scripts/AnimateOnScroll';
 
 if (window.location.pathname === '/' && navigator.language.includes('ua')) {
   window.location.href = '/ua';
 }
 
-initializeBurgerMenu();
-
-document.addEventListener('DOMContentLoaded', (): void => {
-  const animationObserver = new AnimationObserver();
-  animationObserver.observe('.intro__title-box-dash');
-});
+new BurgerMenu();
+new AnimateOnScroll(['.timeline__item', '.intro__title-box-dash']);
