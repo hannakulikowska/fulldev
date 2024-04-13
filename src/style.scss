@@ -41,6 +41,16 @@ html {
   font-style: normal;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+main {
+  flex: 1;
+}
+
 a {
   cursor: pointer;
   text-decoration: none;
