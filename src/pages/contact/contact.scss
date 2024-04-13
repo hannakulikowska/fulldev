@@ -1,0 +1,93 @@
+.contact {
+  @extend .full-dimentions;
+  background-color: $color-white;
+  margin: 0 auto;
+}
+
+.contact__container {
+  @extend .container;
+  display: grid;
+  grid-template-columns: minmax(445px, 1fr) minmax(280px, 750px);
+  gap: calc((5 - 1.15)* 1.1vw + .8rem);
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: minmax(280px, 750px);
+  }
+}
+
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact__title {
+  @extend .main-title;
+  font-size: calc((3 - 1.15)* 1.1vw + .8rem);
+  text-align: start !important;
+  margin-block-end: calc((3 - 1.15)* 1.1vw + .8rem);
+}
+
+.contact__company,
+.contact__nip,
+.contact__regon,
+.contact__address,
+.contact__phone,
+.contact__email {
+  font-weight: 400;
+  font-style: normal;
+  font-size: calc((1.4 - 1.15)* 1.1vw + .8rem);
+  color: $color-main;
+}
+
+@media (hover:hover) {
+
+  .contact__phone:hover,
+  .contact__email:hover {
+    color: $color-accent;
+  }
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-weight: 300;
+  color: $color-main;
+
+  input {
+    padding: 1em 0.65em;
+    border: 1px solid $color-main;
+    border-radius: 4px;
+  }
+}
+
+.contact__form-message {
+  resize: none;
+  height: 195px;
+  padding: 1em 0.65em;
+  line-height: 1.5;
+  border: 1px solid $color-main;
+  border-radius: 4px;
+
+  &:focus {
+    outline: 1px solid $color-main;
+  }
+}
+
+.contact__form-button {
+  cursor: pointer;
+  background-color: $color-main;
+  color: $color-white;
+  border: 1px solid $color-main;
+  border-radius: 4px;
+  padding: 1em 0.65em;
+  transition: 0.3s ease-in-out;
+
+  @media (hover:hover) {
+    &:hover {
+      background-color: $color-accent;
+      color: $color-main;
+    }
+  }
+}
