@@ -28,6 +28,10 @@
   grid-template-columns: repeat(4, minmax(280px, 330px));
   gap: calc((3 - 1.15)* 1.1vw + .8rem);
 
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+
   @media screen and (max-width: 1330px) {
     grid-template-columns: repeat(3, minmax(280px, 320px));
   }
@@ -43,6 +47,11 @@
   @media screen and (max-width: 320px) {
     grid-template-columns: repeat(1, minmax(240px, 300px));
   }
+
+  &.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .advantages__card {
@@ -51,7 +60,7 @@
   padding: 1rem;
   display: grid;
   grid-template-columns: 82px 1fr 1fr;
-  grid-template-rows: 66px auto;
+  grid-template-rows: min-content auto;
   gap: 16px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -124,7 +133,7 @@
   grid-area: title;
   font-weight: 500;
   color: $color-main;
-  font-size: calc((1.5 - 1.15)* 1.1vw + .8rem);
+  font-size: calc((1.4 - 1.15)* 1.1vw + .8rem);
 }
 
 .advantages__card-description {

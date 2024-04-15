@@ -9,7 +9,7 @@ export default class AnimateOnScroll {
     const options: IntersectionObserverInit = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.75,
+      threshold: 0.1,
     };
 
     this.observer = new IntersectionObserver((entries) => {

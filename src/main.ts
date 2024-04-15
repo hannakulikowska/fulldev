@@ -8,4 +8,4 @@ if (window.location.pathname === '/' && navigator.language.includes('uk')) {
 }
 
 new BurgerMenu();
-new AnimateOnScroll(['.timeline__item', '.intro__title-box-dash']);
+new AnimateOnScroll(['.advantages__cards-container', '.timeline__item', '.intro__title-box-dash']);
