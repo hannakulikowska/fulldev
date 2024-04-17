@@ -1,0 +1,12 @@
+.footer {
+  @extend .full-dimentions;
+  background-color: $color-main;
+  padding: calc((1.5 - 1.15)* 1.1vw + .8rem) 1rem;
+}
+
+.footer__copyright {
+  color: $color-footer;
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.9em;
+}

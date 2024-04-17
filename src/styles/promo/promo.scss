@@ -1,0 +1,37 @@
+.promo {
+  @extend .full-dimentions;
+  background-color: $color-accent;
+}
+
+.promo__container {
+  @extend .container;
+  @extend .flex-col-center;
+}
+
+.promo__title {
+  font-weight: 300;
+  color: $color-main;
+  text-align: center;
+  font-size: calc((2.8 - 1.15)* 1.1vw + .8rem);
+  line-height: 1.5;
+}
+
+.promo__button {
+  color: $color-main;
+  background-color: transparent;
+  border: 1px solid $color-main;
+  border-radius: 4px;
+  padding: calc((1.5 - 1.15)* 1.1vw + .8rem) calc((3 - 1.15)* 1.1vw + .8rem);
+  font-size: calc((1.5 - 1.15)* 1.1vw + .8rem);
+  font-weight: 300;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+
+    @media (hover:hover) {
+      color: $color-white;
+      background-color: $color-main;
+    }
+
+  }
+}

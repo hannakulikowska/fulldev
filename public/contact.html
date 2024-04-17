@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="/src/assets/fonts/Poppins-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="canonical" href="https://fulldev.pl/contact.html">
+  <link rel="alternate" hreflang="pl" href="https://fulldev.pl/contact.html">
+  <link rel="alternate" hreflang="uk" href="https://fulldev.pl/uk/contact.html">
+  <title>Full Development</title>
+  <meta name="description" content="Projektowanie stron internetowych. Kontakt.">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Full Development">
+  <meta property="og:description" content="Projektowanie stron internetowych. Kontakt.">
+  <meta property="og:image" content="https://fulldev.pl/page.png">
+  <meta property="og:url" content="https://fulldev.pl/contact/">
+
+  <meta name="author" content="Volodymyr Koshlai Full Development">
+  <meta name="copyright" content="Copyright 2024">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <a class="header__logo-link" href="/">
+        <img class="header__logo" src="/src/assets/svg/logo.svg" alt="logo">
+      </a>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__menu-item"><a class="header__menu-link" href="/">Główna</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="/projects">Projekty</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="/offer">Oferta</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="javascript:void(0)">Kontakt</a></li>
+          <li class="header__menu-item">
+            <a class="header__menu-link header__main-language" href="javascript:void(0)">PL</a>
+            <div class="header__dropdown-content">
+              <a class="header__second-language" href="/uk">UA</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <input class="header__burger-checkbox" id="burger-checkbox" type="checkbox">
+      <label class="header__burger-menu" for="burger-checkbox"></label>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="contact">
+      <div class="contact__container">
+        <div class="contact__content">
+          <h1 class="contact__title">Skontaktuj się z nami</h1>
+          <p class="contact__company">Volodymyr Koshlai Full Development</p>
+          <p class="contact__nip">NIP: 8513289582</p>
+          <p class="contact__regon">REGON: 524614423</p>
+          <address class="contact__address">Adres rejestrowy: ul. Swarożyca 15b/13, 71-601 Szczecin</address>
+          <a class="contact__phone" href="tel:+48506395584">Telefon: +48&nbsp;506&nbsp;395&nbsp;584</a>
+          <a class="contact__email" href="mailto: info@fulldev.pl">E-mail: info@fulldev.pl</a>
+
+        </div>
+        <form class="contact__form" method="post" accept-charset="UTF-8" novalidate>
+          <input class="contact__form-name" type="text" placeholder="Imię" name="name" required autocomplete>
+          <input class="contact__form-surname" type="text" placeholder="Nazwisko" name="surname" required autocomplete>
+          <input class="contact__form-company" type="text" placeholder="Nazwa firmy" name="company">
+          <input class="contact__form-phone" type="tel" placeholder="Telefon" name="phone" required>
+          <input class="contact__form-email" type="email" placeholder="Email" name="email" required>
+          <textarea class="contact__form-message" placeholder="Wiadomość" name="message"></textarea>
+          <button class="contact__form-button" type="submit">Wyślij zapytanie</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copyright">&copy;2023-2024 Full Development</p>
+  </footer>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

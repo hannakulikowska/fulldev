@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  min-height: 90px;
+  background-color: $color-accent;
+}
+
+.header.active {
+  position: fixed;
+  z-index: 1;
+}
+
+.header__container {
+  height: 90px;
+  @include flex (space-between, center);
+  gap: 30px;
+}
+
+.header__logo {
+  height: 50px;
+  width: auto;
+  padding-left: 1em;
+}

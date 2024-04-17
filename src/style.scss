@@ -1,0 +1,89 @@
+@import '../node_modules/modern-normalize/modern-normalize.css';
+
+@import './styles/global/fonts.scss';
+@import './styles/global/variables.scss';
+@import './styles/global/mixins.scss';
+@import './styles/global/animations/left-right.scss';
+@import './styles/global/animations/fade-in.scss';
+
+@import './styles/header/header.scss';
+@import './styles/header/navigation.scss';
+@import './styles/header/burger.scss';
+@import './styles/header/languages.scss';
+
+@import './styles/intro/intro.scss';
+@import './styles/advantages/advantages.scss';
+@import './styles/timeline/timeline.scss';
+@import './styles/promo/promo.scss';
+@import './styles/footer/footer.scss';
+
+@import './pages/contact/contact.scss';
+
+html,
+body {
+  @extend .full-dimentions;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: calc((5 - 1.15)* 1.1vw + .8rem) 1rem calc((7 - 1.15)* 1.1vw + .8rem);
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.full-dimentions {
+  width: 100%;
+  height: auto;
+}
+
+.main-title {
+  max-width: 750px;
+  font-weight: 600;
+  color: $color-main;
+  text-align: center;
+}

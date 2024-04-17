@@ -1,0 +1,51 @@
+.intro {
+  @extend .full-dimentions;
+  background-color: $color-accent;
+  cursor: default;
+}
+
+.intro__container {
+  @extend .container;
+  @include flex (center, center);
+  gap: calc((5 - 1.15)* 1.1vw + .8rem);
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.intro__title {
+  @extend .main-title;
+  font-size: calc((5 - 1.15)* 1.1vw + .8rem);
+}
+
+.intro__title-box-dash {
+  display: inline-block;
+  border: 2px dashed $color-main;
+  will-change: visibility, transform, opacity;
+}
+
+.intro__title-box-dash.animate {
+  animation: slideInLeft 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.intro__title-box-inner {
+  display: inline-block;
+  background-color: $color-main;
+  color: $color-accent;
+  padding: 0 0.4em;
+  margin: 0.2em 1px;
+}
+
+.intro__description {
+  font-weight: 300;
+  font-size: calc((1.6 - 1.15)* 1.1vw + .8rem);
+  text-align: center;
+  color: $text-additional;
+  margin-block-start: calc((2.5 - 1.15)* 1.1vw + .8rem);
+}
+
+.intro__image {
+  width: calc((40 - 1.15)* 1.1vw + .8rem);
+  height: auto;
+}
